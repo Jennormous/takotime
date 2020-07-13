@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "avenir-regular";
+  src: url("../assets/fonts/AvenirNextProLT/avenir-regular.otf");
+}
+
+@font-face {
+  font-family: "avenir-bold";
+  src: url("../assets/fonts/AvenirNextProLT/avenir-bold.otf");
+}
+
+@font-face {
+  font-family: "avenir-demi-bold";
+  src: url("../assets/fonts/AvenirNextProLT/avenir-demi-bold.otf");
+}
+
+@mixin hero-header {
+  font-family: "avenir-bold";
+  font-size: 60px;
+  line-height: 68px;
+}
+
+@mixin desktop-header {
+  font-family: "avenir-bold";
+  font-size: 36px;
+  line-height: 44px;
+}
+
+@mixin desktop-subheader {
+  font-family: "avenir-demi-bold";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Used for H1 on mobile and H2 on Tablet-Desktop */
+@mixin top-header {
+  font-family: "avenir-bold";
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/* Used for H2 tags on mobile */
+
+@mixin mobile-subheader {
+  font-family: "avenir-demi-bold";
+  font-size: 14px;
+}
+
+/* For general paragraphs and lists */
+
+@mixin mobile-paragraph-lists {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+@mixin desktop-paragraph-lists {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* styling for labels from mobile-desktop */
+
+@mixin labels {
+  font-size: 12px;
+  line-height: 20px;
+  color: $mercury;
+}

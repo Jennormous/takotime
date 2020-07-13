@@ -1,0 +1,267 @@
+@mixin avatar-style {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  border-radius: 50%;
+}
+
+.comment-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 16px;
+  border-bottom: 2px solid $silver;
+
+  &__all-comments {
+    margin: 0 16px 40px 16px;
+
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  &__header {
+    @include top-header;
+    padding-left: 16px;
+    padding-top: 32px;
+    width: 100%;
+  }
+
+  &__form {
+    display: flex;
+
+    flex-flow: column wrap;
+    width: 73vw;
+    margin-left: 16px;
+
+    &--btn {
+      color: $white;
+      background-color: $black;
+      margin-bottom: 32px;
+      padding: 8px;
+      width: 73vw;
+      border-radius: 4px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+    &--label {
+      text-transform: uppercase;
+      color: $silver;
+      height: 30px;
+    }
+
+    &--input-name {
+      width: 224px;
+      border-radius: 4px;
+      border-radius: 5px;
+      border: 2px solid $silver;
+
+      margin-bottom: 20px;
+    }
+
+    &--input-name:active {
+      border: 2px solid $black;
+    }
+
+    &--input-name:focus {
+      outline: 2px solid black;
+    }
+
+    &--avatar {
+      width: 54px;
+      height: 54px;
+      @include avatar-style;
+      opacity: unset;
+    }
+  }
+
+  &__textarea {
+    width: 224px;
+    border-radius: 5px;
+    border: 2px solid $silver;
+    margin-bottom: 20px;
+    background-color: $alabaster;
+    resize: none;
+  }
+
+  &__textarea:focus {
+    outline: 2px solid black;
+  }
+}
+
+.main-container {
+  border-bottom: 1px solid $silver;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+
+  &__header {
+    @include mobile-paragraph-lists;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+  }
+
+  &__info {
+    width: 60%;
+  }
+
+  &__img {
+    width: 64px;
+    height: 64px;
+    @include avatar-style;
+    margin: 24px 0;
+  }
+
+  &__username {
+    @include mobile-subheader;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  &__date {
+    margin: 0;
+    color: $silver;
+  }
+}
+
+/* 
+==========================
+Tablet Version
+==========================
+*/
+
+@include tablet {
+  .comment-section {
+    padding: 0 24px;
+    width: 67.7vw;
+    margin: 0 124px;
+
+    &__all-comments {
+      margin: 0 24px 40px 24px;
+    }
+
+    &__form {
+      flex-direction: column;
+      width: 67.7vw;
+
+      &--btn {
+        width: 19vw;
+        height: 48px;
+        align-self: flex-end;
+      }
+    }
+
+    &__container {
+      &--input-name {
+        width: 100%;
+        height: 48px;
+      }
+
+      &--avatar {
+        height: 64px;
+        width: 64px;
+        margin-top: 24px;
+      }
+    }
+
+    &__textarea {
+      width: 100%;
+      height: 100px;
+    }
+  }
+
+  .main-container {
+    margin: 0 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 24px 0;
+    padding-bottom: 24px;
+
+    &__info {
+      width: 80%;
+    }
+
+    &__header {
+      justify-content: flex-start;
+    }
+
+    &__username {
+      margin-right: 16px;
+    }
+
+    &__icons {
+      display: flex;
+      justify-content: space-between;
+
+      &--like {
+      }
+
+      &--del-btn {
+      }
+    }
+  }
+
+  /* 
+==========================
+Desktop Version
+==========================
+*/
+
+  @include desktop {
+    .comment-section {
+      margin: 56px 31.67vw 0 31.67vw;
+      width: 37vw;
+      padding: 0;
+
+      &__all-comments {
+        //margin: 16px 180px 40px 456px;
+      }
+
+      &__header {
+        @include desktop-header;
+        padding-left: 12.5vw;
+        margin: 0;
+      }
+
+      &__form {
+        width: 100%;
+
+        &--btn {
+          width: 11vw;
+          height: 90px;
+          border-radius: 5px;
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+
+      &__container {
+        &--input-name {
+          width: 34vw;
+        }
+      }
+
+      &__textarea {
+        width: 34vw;
+        height: 150px;
+      }
+    }
+
+    .main-container {
+      width: 37vw;
+      //width: 36.6vw;
+
+      margin-right: 31.67vw;
+      margin-left: 31.67vw;
+
+      &__img {
+        margin-right: 16px;
+        height: 48px;
+        width: 48px;
+      }
+    }
+  }
+}

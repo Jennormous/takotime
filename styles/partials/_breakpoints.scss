@@ -1,0 +1,23 @@
+/* media query for mobile */
+
+/* @mixin Mobile {
+  @media only screen and (max-width: 320px) {
+    @content;
+  }
+} */
+
+/* media query for tablets */
+
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+/* media query for desktop computers */
+
+@mixin desktop {
+  @media only screen and (min-width: 1440px) {
+    @content;
+  }
+}

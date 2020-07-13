@@ -1,0 +1,89 @@
+.main-header {
+  background-color: $black;
+  padding-top: 8px;
+  height: 80px;
+
+  &__band-logo {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.main-header-nav {
+  text-decoration: none;
+  margin-top: 16px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+    &--item {
+      width: 50%;
+      text-align: center;
+      list-style: none;
+      padding-bottom: 8px;
+
+      &.active {
+        border-bottom: 0.313em solid $white;
+      }
+    }
+    &--text {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+@include tablet {
+  .main-header {
+    display: flex;
+    align-items: center;
+    padding-left: 3.12vw;
+
+    &__band-logo {
+      height: 25px;
+      margin-left: 24px;
+      margin: 0px;
+    }
+
+    .main-header-nav {
+      margin-top: 24px;
+      margin-left: 8vw;
+      width: 30vw;
+
+      &__list {
+        margin: 0px;
+        justify-content: space-between;
+
+        &--item {
+          padding: 0px 24px 24px 0;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .main-header {
+    padding-left: 12.5vw;
+
+    &__band-logo {
+    }
+  }
+
+  .main-header-nav {
+    padding-left: 0;
+    margin: 0;
+
+    &__list {
+      margin-right: 56px;
+      justify-content: flex-start;
+    }
+  }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>BandSite</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <!-- logo -->
+      <a href="./index.html"
+        ><img
+          class="main-header__band-logo"
+          src="./assets/logo/Logo-bandsite.svg"
+          alt="BandSite Logo"
+      /></a>
+      <nav class="main-header-nav">
+        <ul class="main-header-nav__list">
+          <li class="main-header-nav__list--item active">
+            <a class="main-header-nav__list--text" href="./index.html">About</a>
+          </li>
+          <li class="main-header-nav__list--item">
+            <a class="main-header-nav__list--text" href="./pages/shows.html"
+              >Meet and Greet</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Image -->
+
+    <section class="hero">
+      <div class="hero__image">
+        <h1 class="hero__header">Takoyaki <br />The Goodest Doge</h1>
+      </div>
+    </section>
+
+    <!-- About Band-->
+
+    <main class="primary">
+      <h1 class="primary__header">About This Majestic Creature</h1>
+      <img
+        class="primary__band-image"
+        src="./assets/images/takoyaki.jpg"
+        alt="band members"
+      />
+      <section class="primary__band-quote">
+        <h2 class="primary__band-quote--spotlight">
+          “Woof, woof, woof. *panting*"
+        </h2>
+        <h2 class="primary__band-quote--name">-</h2>
+      </section>
+      <section class="primary__band-blog">
+        <h2 class="primary__band-blog--header">
+          Takoyaki, The Goodest Doge
+        </h2>
+        <div class="primary__band-article">
+          <div class="primary__band-article--section">
+            Takoyaki is a shiba inu. You might be familiar with shibas as the
+            "doge" meme all over the internet. They are the smallest of the
+            Japanese spitz dogs, but they have big personalities. Seriously,
+            it's too much to handle sometimes. You'll know what that means when
+            you witness a dog throwing a tantrum after being told "no". Must be
+            what having a teenager is like.
+          </div>
+          <div class="primary__band-article--section">
+            Tako was born September 3rd, 2017. Being born and raised in
+            Vancouver,BC, he's been spoiled with beautiful hiking trails.
+            Despite loving the great outdoors, he hates walking through puddles
+            or mud. His favorite treats are beef liver, and he adores his pet
+            cat, Hyo.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Photo gallery -->
+
+    <section class="photo-gallery">
+      <div class="photo-gallery__header">
+        <h1 class="photo-gallery__header--style">Photo Gallery</h1>
+      </div>
+      <div class="photo-gallery__grid">
+        <img
+          class="photo-gallery__grid--photo"
+          src="./assets/images/Photo-gallery-1.jpg"
+        />
+        <img
+          class="photo-gallery__grid--photo"
+          src="./assets/images/Photo-gallery-2.jpg"
+        />
+        <img
+          class="photo-gallery__grid--photo"
+          src="./assets/images/Photo-gallery-3.jpg"
+        />
+        <img
+          class="photo-gallery__grid--photo"
+          src="./assets/images/Photo-gallery-4.jpg"
+        />
+        <img
+          class="photo-gallery__grid--photo"
+          src="./assets/images/Photo-gallery-5.jpg"
+        />
+        <img
+          class="photo-gallery__grid--photo"
+          src="./assets/images/Photo-gallery-6.jpg"
+        />
+        <img
+          class="photo-gallery__grid--photo"
+          src="./assets/images/Photo-gallery-7.jpg"
+        />
+        <img
+          class="photo-gallery__grid--photo"
+          src="./assets/images/Photo-gallery-8.jpg"
+        />
+        <img
+          class="photo-gallery__grid--photo"
+          src="./assets/images/Photo-gallery-9.jpg"
+        />
+      </div>
+    </section>
+
+    <!--- Comment Section -->
+
+    <h1 class="comment-section__header">Join The Conversation</h1>
+    <section class="comment-section">
+      <img
+        class="comment-section__container--avatar"
+        src="./assets/avatar/Mohan-muruge.jpg"
+        alt="avatar"
+      />
+      <form class="comment-section__form">
+        <div class="comment-section__container">
+          <label class="comment-section__container--label" for="name"
+            >Name</label
+          >
+          <input
+            class="comment-section__container--input-name"
+            type="text"
+            name="username"
+            placeholder="Who are you?"
+          />
+        </div>
+        <div class="comment-section__container">
+          <label class="comment-section__container--label" for="comment"
+            >Comment</label
+          >
+          <textarea
+            name="commenttext"
+            class="comment-section__textarea"
+            rows="10"
+            cols="50"
+            placeholder="Type something here!"
+          ></textarea>
+        </div>
+        <div class="comment-section__container">
+          <button class="comment-section__form--btn">Comment</button>
+        </div>
+      </form>
+    </section>
+
+    <div class="comment-section__all-comments"></div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <h1 class="footer__header">Get In Touch</h1>
+      <div class="footer__icon-container">
+        <a href="https://www.instagram.com/takoyaki.inu/" target="_blank">
+          <img
+            class="footer__icon-container--social-icon"
+            src="assets/Icons/SVG/Icon-instagram.svg"
+        /></a>
+        <a href="" target="_blank">
+          <img
+            class="footer__icon-container--social-icon"
+            src="assets/Icons/SVG/Icon-facebook.svg"
+        /></a>
+        <a href="" target="_blank">
+          <img
+            class="footer__icon-container--social-icon"
+            src="assets/Icons/SVG/Icon-twitter.svg"
+        /></a>
+      </div>
+      <img
+        class="footer__band-logo"
+        src="./assets/logo/Logo-bandsite.svg"
+        alt="BandSite Logo"
+      />
+      <section class="footer__contacts-container">
+        <div class="footer__contacts-container--one">
+          <h2 class="footer__contacts-container--name">Richard Rovner</h2>
+          <h2 class="footer__contacts-container--name">
+            The Bees Knees Management
+          </h2>
+          <h4 class="footer__contacts-container--info">
+            460 King Street West <br />Toronto, Ontario M5V 1L7
+          </h4>
+          <h4 class="footer__contacts-container--info">
+            <a
+              class="footer__contacts-container--email"
+              href="mailto:smj.boudreau@gmail.com"
+            >
+              info@thebeesknees.com
+            </a>
+          </h4>
+        </div>
+        <div class="footer__contacts-container--one">
+          <h2 class="footer__contacts-container--name">Marsha Vlasic</h2>
+          <h2 class="footer__contacts-container--name">
+            Artist Group International
+          </h2>
+          <h4 class="footer__contacts-container--info">
+            Booking Agent for <br />US / South America / Japan
+          </h4>
+          <h4 class="footer__contacts-container--info">
+            <a
+              class="footer__contacts-container--email"
+              href="mailto:smj.boudreau@gmail.com"
+            >
+              marsha.vlasic@artistgrp.com
+            </a>
+          </h4>
+        </div>
+        <div class="footer__contacts-container--one">
+          <h2 class="footer__contacts-container--name">Russel Warby</h2>
+          <h2 class="footer__contacts-container--name">
+            William Morrir Entertainment
+          </h2>
+          <h4 class="footer__contacts-container--info">
+            Booking Agent for <br />UK / EU / AU
+          </h4>
+          <h4 class="footer__contacts-container--info">
+            <a
+              class="footer__contacts-container--email"
+              href="mailto:smj.boudreau@gmail.com"
+              >RLW@wmeentertainment.com</a
+            >
+          </h4>
+        </div>
+      </section>
+      <div class="footer__copywrite">
+        <h4 class="footer__copywrite--style">
+          Copyright The Bees Knees © 2018 All Rights Reserved
+        </h4>
+      </div>
+    </footer>
+    <script src="./scripts/comments.js
+     "></script>
+  </body>
+</html>

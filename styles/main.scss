@@ -1,0 +1,18 @@
+@import "./partials/breakpoints", "./partials/colors", "./partials/fonts",
+  "./partials/header", "./partials/hero-image", "./partials/primary-content",
+  "./partials/shows", "./partials/photo-gallery", "./partials/comment-section",
+  "./partials/footer";
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: "avenir-regular", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

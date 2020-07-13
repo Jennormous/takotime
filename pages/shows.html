@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>BandSite</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <!-- logo -->
+      <a href="../index.html">
+        <img
+          class="main-header__band-logo"
+          src="../assets/logo/Logo-bandsite.svg"
+          alt="BandSite Logo"
+      /></a>
+      <nav class="main-header-nav">
+        <ul class="main-header-nav__list">
+          <li class="main-header-nav__list--item">
+            <a class="main-header-nav__list--text" href="../index.html"
+              >About</a
+            >
+          </li>
+          <li class="main-header-nav__list--item active">
+            <a class="main-header-nav__list--text" href="shows.html"
+              >Meet and Greet</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-show">
+      <h2 class="hero-show__title">Tako wants to meet you.</h2>
+      <div class="hero-show__container">
+        <h1 class="hero-show__header">
+          2020 Summer Tour in Beautiful British Columibia
+        </h1>
+
+        <iframe
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/241854205&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="time-table">
+      <h1 class="time-table__header">Say Hello!</h1>
+      <table id="mobile-table"></table>
+      <table id="desktop-table"></table>
+    </section>
+
+    <footer class="footer">
+      <h1 class="footer__header">Get In Touch</h1>
+      <div class="footer__icon-container">
+        <a href="https://www.instagram.com/takoyaki.inu/" target="_blank">
+          <img
+            class="footer__icon-container--social-icon"
+            src="../assets/Icons/SVG/Icon-instagram.svg"
+        /></a>
+        <a href="" target="_blank">
+          <img
+            class="footer__icon-container--social-icon"
+            src="../assets/Icons/SVG/Icon-facebook.svg"
+        /></a>
+        <a href="" target="_blank">
+          <img
+            class="footer__icon-container--social-icon"
+            src="../assets/Icons/SVG/Icon-twitter.svg"
+        /></a>
+      </div>
+      <img
+        class="footer__band-logo"
+        src="../assets/logo/Logo-bandsite.svg"
+        alt="BandSite Logo"
+      />
+      <section class="footer__contacts-container">
+        <div class="footer__contacts-container--one">
+          <h2 class="footer__contacts-container--name">Richard Rovner</h2>
+          <h2 class="footer__contacts-container--name">
+            The Bees Knees Management
+          </h2>
+          <h4 class="footer__contacts-container--info">
+            460 King Street West <br />Toronto, Ontario M5V 1L7
+          </h4>
+          <h4 class="footer__contacts-container--info">
+            <a
+              class="footer__contacts-container--email"
+              href="mailto:smj.boudreau@gmail.com"
+            >
+              info@thebeesknees.com
+            </a>
+          </h4>
+        </div>
+        <div class="footer__contacts-container--one">
+          <h2 class="footer__contacts-container--name">Marsha Vlasic</h2>
+          <h2 class="footer__contacts-container--name">
+            Artist Group International
+          </h2>
+          <h4 class="footer__contacts-container--info">
+            Booking Agent for <br />US / South America / Japan
+          </h4>
+          <h4 class="footer__contacts-container--info">
+            <a
+              class="footer__contacts-container--email"
+              href="mailto:smj.boudreau@gmail.com"
+            >
+              marsha.vlasic@artistgrp.com
+            </a>
+          </h4>
+        </div>
+        <div class="footer__contacts-container--one">
+          <h2 class="footer__contacts-container--name">Russel Warby</h2>
+          <h2 class="footer__contacts-container--name">
+            William Morrir Entertainment
+          </h2>
+          <h4 class="footer__contacts-container--info">
+            Booking Agent for <br />UK / EU / AU
+          </h4>
+          <h4 class="footer__contacts-container--info">
+            <a
+              class="footer__contacts-container--email"
+              href="mailto:smj.boudreau@gmail.com"
+              >RLW@wmeentertainment.com</a
+            >
+          </h4>
+        </div>
+      </section>
+      <div class="footer__copywrite">
+        <h4 class="footer__copywrite--style">
+          Copyright The Bees Knees © 2018 All Rights Reserved
+        </h4>
+      </div>
+    </footer>
+
+    <script src="/scripts/shows-table.js"></script>
+  </body>
+</html>

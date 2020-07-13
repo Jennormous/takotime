@@ -1,0 +1,47 @@
+.hero * {
+  margin: 0px;
+}
+
+.hero {
+  width: 100vw;
+
+  &__image {
+    display: flex;
+    align-items: center;
+    background-image: url("../assets/images/hero-image.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-color: $black;
+    background-blend-mode: overlay;
+    width: 100%;
+    min-height: 183px;
+  }
+  &__header {
+    @include top-header;
+    padding-left: 5%;
+    color: $white;
+  }
+}
+
+@include tablet {
+  .hero,
+  .hero__image {
+    height: 400px;
+  }
+
+  .hero__header {
+    @include hero-header;
+  }
+}
+
+@include desktop {
+  .hero,
+  .hero__image {
+    height: 670px;
+  }
+
+  .hero__header {
+    margin: 12.5vw;
+    padding-left: 0;
+  }
+}
